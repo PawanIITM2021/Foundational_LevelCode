@@ -1,12 +1,21 @@
-l=[5,2,9,6,1,3,9,0,14,2,23,56,34,12,89,74]
+def mini(L):
+    '''finds the minimum element in the list L'''
+    mini=L[0]
+    for x in L:
+        if (x<mini):
+            mini=x
+    return mini
 
-sort_L=[]
-for i in range(len(l)):
-    for j in range(i+1,len(l)):
-        if l[i]>l[j]:
-            temp=l[i]
-            l[i]=l[j]
-            l[j]=temp
+def Sort(L):
+    '''recursively sort the list L'''
+    if(L==[]) or (len(L)==1):
+        return L
+    #if the list is empty otherwise  
+    
+    
+    m=mini(L)
+    L.remove(m)
+    return [m]+Sort(L)
 
-
-print(l)
+L=[5,6,2,19,59,1,10,1,121]
+print(Sort(L))

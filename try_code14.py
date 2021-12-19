@@ -1,0 +1,19 @@
+a=str(input())
+b=str(input())
+c=str(input())
+d=str(input())
+e=str(input())
+
+if(a[:]==b[0]):
+    if(b[:]==c[0:2]):
+        if(c[:]==d[0:3]):
+            if(d[:]==e[0:4]):
+                print("magical")
+            else:
+                print("non-magical")
+        else:
+            print("non-magical")
+    else:
+        print("non-magical")
+else:
+    print("non-magical")
