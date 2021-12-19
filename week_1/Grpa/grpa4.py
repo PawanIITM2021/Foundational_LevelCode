@@ -1,0 +1,6 @@
+email_id=input()
+print('branch',email_id[0:2])
+print('degree',email_id[3:5])
+print('year',email_id[6:8])
+print('roll',email_id[9:13])
+print('institute',email_id[35:39])
